@@ -52,7 +52,7 @@ public class NotificationController {
     }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     @PreAuthorize("isAuthenticated()")
     public void delete(@PathVariable String id) {
         var user = currentUserService.requireCurrentUser();
