@@ -18,7 +18,7 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class JwtService {
 
-    private static final int MIN_SECRET_LENGTH = 50;
+    private static final int MIN_SECRET_LENGTH = 51;
 
     private final AppProperties appProperties;
 
