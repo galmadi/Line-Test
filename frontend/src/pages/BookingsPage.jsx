@@ -225,7 +225,7 @@ export default function BookingsPage() {
     purpose: "",
   });
   const [decisionReasons, setDecisionReasons] = useState({});
-  const [mineOnly, setMineOnly] = useState(true);
+  const [mineOnly, setMineOnly] = useState(false);
   const [statusFilter, setStatusFilter] = useState("ALL");
   const [sendingQrId, setSendingQrId] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
