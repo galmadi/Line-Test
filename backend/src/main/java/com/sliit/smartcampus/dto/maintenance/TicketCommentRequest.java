@@ -5,4 +5,4 @@ public record TicketCommentRequest(String content) {
 
 // pass 10
 
-// pass 5
+// pass 6
