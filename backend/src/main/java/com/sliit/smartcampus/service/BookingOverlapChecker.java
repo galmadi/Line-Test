@@ -36,4 +36,4 @@ public class BookingOverlapChecker {
 
 // pass 10
 
-// pass 7
+// pass 8
