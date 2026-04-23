@@ -24,7 +24,7 @@ export default function RegisterPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = useState("");
-  const [showPw, setShowPw] = React.useState(false);
+  const [showPw, setShowPw] = React.useState(true);
   const [error, setError] = React.useState(null);
   const [submitting, setSubmitting] = useState(false);
   const emailError = validateCampusEmail(email);
