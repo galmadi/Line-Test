@@ -44,7 +44,7 @@ public class NotificationController {
     }
 
     @PutMapping("/read-all")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.OK)
     @PreAuthorize("isAuthenticated()")
     public void markAllRead() {
         var user = currentUserService.requireCurrentUser();
@@ -52,7 +52,7 @@ public class NotificationController {
     }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     @PreAuthorize("isAuthenticated()")
     public void delete(@PathVariable String id) {
         var user = currentUserService.requireCurrentUser();
