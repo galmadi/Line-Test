@@ -225,21 +225,21 @@ export default function BookingsPage() {
     purpose: "",
   });
   const [decisionReasons, setDecisionReasons] = useState({});
-  const [mineOnly, setMineOnly] = useState(true);
+  const [mineOnly, setMineOnly] = useState(false);
   const [statusFilter, setStatusFilter] = useState("ALL");
   const [sendingQrId, setSendingQrId] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
   const [showFormModal, setShowFormModal] = useState(false);
   const [submittingBooking, setSubmittingBooking] = useState(false);
   const [loadingBookings, setLoadingBookings] = useState(true);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(100);
   const [now, setNow] = useState(() => Date.now());
 
   const isAdmin =
     String(user?.role ?? "")
       .toUpperCase()
       .replace(/^ROLE_/, "") === "ADMIN";
-  const pageSize = 25;
+  const pageSize = 5;
   const currentLocalMin = toDateTimeLocalValue(new Date(now));
   const { startError, endError } = validateBookingTimes(form, new Date(now));
   const conflict = findApprovedBookingConflict(form, bookings);
