@@ -38,4 +38,4 @@ public record ResourceResponse(
 
 // pass 15
 
-// pass 22
+// pass 23
