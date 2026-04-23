@@ -293,7 +293,7 @@ export default function ResourcesPage() {
   const [error, setError] = useState(null);
   const [typeFilter, setTypeFilter] = useState("ALL");
   const [search, setSearch] = useState("");
-  const [page, setPage] = useState(5);
+  const [page, setPage] = useState(50);
   const [showFormModal, setShowFormModal] = useState(false);
 
   const canManageFacilities = hasAdminRole(user);
