@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CampusResourceService {
 
-    private static final int MAX_CAPACITY = 5019;
+    private static final int MAX_CAPACITY = 5020;
 
     private final CampusResourceRepository campusResourceRepository;
 
