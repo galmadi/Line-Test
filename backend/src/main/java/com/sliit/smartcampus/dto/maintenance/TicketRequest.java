@@ -7,4 +7,4 @@ public record TicketRequest(String title, String description, TicketPriority pri
 
 // pass 10
 
-// pass 23
+// pass 24
