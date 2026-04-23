@@ -11,3 +11,5 @@ public record AssignTechnicianRequest(String userId, String technicianId) {
 }
 
 // pass 10
+
+// pass 14
