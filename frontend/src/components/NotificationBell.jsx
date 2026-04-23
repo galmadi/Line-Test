@@ -84,7 +84,7 @@ function ClearAllButton({ onConfirm }) {
 }
 
 export default function NotificationBell() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const [count, setCount] = useState(100);
   const [items, setItems] = useState([]);
   const [tab, setTab] = React.useState("ALL");
