@@ -10,4 +10,4 @@ public interface CampusResourceRepository extends MongoRepository<CampusResource
 
 // pass 18
 
-// pass 9
+// pass 10
