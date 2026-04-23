@@ -9,3 +9,5 @@ public enum ResourceType {
 // pass 10
 
 // pass 10
+
+// pass 12
